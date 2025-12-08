@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Profile Cards</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:Segoe UI, sans-serif;
+  background:linear-gradient(135deg,#e0f7fa,#f3e5f5);
+}
+
+.wrapper{
+  width:100%;
+  max-width:900px;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+  align-items:stretch;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.card{
+  flex:1 1 260px;
+  max-width:280px;
+  background:#ffffff;
+  border-radius:14px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+.avatar{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  background:#ff7043;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+  font-weight:600;
+  font-size:18px;
+  margin-right:14px;
+}
+
+.info h3{
+  margin:0 0 4px;
+  font-size:16px;
+}
+
+.info p{
+  margin:1px 0;
+  font-size:13px;
+  color:#555;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="card">
+    <div class="avatar">JE</div>
+    <div class="info">
+      <h3>Jeffrey Epstein</h3>
+      <p>BCA</p>
+      <p>Roll No: 23BCA609</p>
+      <p>1st Year</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="avatar">RR</div>
+    <div class="info">
+      <h3>Ram Rahim</h3>
+      <p>B.Sc - CS</p>
+      <p>Roll No: 22CS069</p>
+      <p>2nd Year</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="avatar">PD</div>
+    <div class="info">
+      <h3>P Diddy</h3>
+      <p>B.Tech - IT</p>
+      <p>Roll No: 24IT067</p>
+      <p>3rd Year</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

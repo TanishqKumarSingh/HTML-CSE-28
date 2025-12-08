@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-commerce Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:Arial,sans-serif;background:#f5f5f5;}
+
+    .top-bar{
+      background:#111;color:#fff;
+      padding:5px 5vw;
+      font-size:0.8rem;
+    }
+    .top-left,.top-right{width:50%;}
+    .top-left{float:left;}
+    .top-right{float:right;text-align:right;}
+    .top-right span{display:inline;margin-left:1em;}
+    .clear{clear:both;}
+
+    header{background:#fff;}
+    .navbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:1rem 5vw;
+      min-height:8vh;
+    }
+    .logo{font-size:1.4rem;font-weight:bold;white-space:nowrap;}
+    .logo span{color:blue;}
+
+    .nav-links{list-style:none;display:none;}
+    .nav-links li{display:inline-block;margin:0 10px;}
+    .nav-links a{text-decoration:none;color:#333;font-size:0.95rem;}
+    .nav-links a.active{color:blue;}
+
+    .nav-right{display:flex;gap:0.5rem;}
+    .search-box{padding:5px 8px;font-size:0.9rem;}
+    .cart-btn{
+      padding:6px 10px;
+      background:#000;
+      color:#fff;
+      border:none;
+      font-size:0.9rem;
+    }
+
+    @media (min-width:600px){
+      .nav-links{display:block;}
+    }
+
+    main{
+      padding:2rem 5vw;
+      font-size:1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="top-left">Free Shipping</div>
+    <div class="top-right">
+      <span>Help</span>
+      <span>Login</span>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Shop<span>Cart</span></div>
+
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <input type="text" class="search-box" placeholder="Search">
+        <button class="cart-btn">Cart (2)</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>E-commerce Navbar</h1>
+    <p>Today's Sale Offer!!!</p>
+  </main>
+
+</body>
+</html>
