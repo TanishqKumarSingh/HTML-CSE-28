@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile Card</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+
+            
+            display: flex;
+            justify-content: center;   
+            align-items: center;       
+            background: blue;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;    
+            justify-content: center;
+            align-items: center;
+
+            background: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .info {
+            margin-bottom: 15px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .buttons button {
+            flex: 1;
+            margin: 5px;
+            padding: 8px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+            background-color: pink;
+        }
+
+        .buttons button:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/120" alt="Student Image">
+
+        <div class="info">
+            <h2>Tanishq Kumar Singh</h2>
+            <p>Class: 12th</p>
+            <p>Section: A</p>
+            <p>Email: tanishq@email.com</p>
+        </div>
+
+        <div class="buttons">
+            <button>Follow</button>
+            <button>Message</button>
+        </div>
+    </div>
+
+</body>
+</html>
